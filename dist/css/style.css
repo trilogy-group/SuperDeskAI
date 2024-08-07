@@ -1403,12 +1403,7 @@ label {
 	margin-right: -12px;
 	margin-left: -12px;
 }
-.demo-tables-wrap:first-child {
-	margin-top: -12px;
-}
-.demo-tables-wrap:last-child {
-	margin-bottom: -12px;
-}
+
 .demo-table {
 	position: relative;
 	padding: 12px;
@@ -1429,11 +1424,6 @@ label {
 	transform: translateX(-50%);
 	background-image: url("../images/pricing-illustration.svg");
 }
-.demo-table-header,
-.demo-table-features-title,
-.demo-table-features li {
-	border-bottom: 1px solid rgba(138, 148, 167, 0.24);
-}
 .demo-table-inner {
 	position: relative;
 	display: flex;
@@ -1446,39 +1436,69 @@ label {
 	position: relative;
 	width: 100%;
 }
-.demo-table-inner::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	box-shadow: 0 24px 48px rgba(21, 24, 29, 0.24);
-	mix-blend-mode: multiply;
+
+.demo-header {
+	margin-bottom: 48px;
 }
-.demo-table-price-currency {
-	color: #8a94a7;
+.demo-slider-wrap {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
 }
-.demo-table-features-title {
-	color: #fff;
-	font-weight: 700;
-}
-.demo-table-features li {
+
+.demo-slider {
 	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.demo-slide {
+	min-width: 100%;
+	box-sizing: border-box;
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
-	padding: 14px 0;
 }
-.demo-table-features li::before {
-	content: "";
-	width: 16px;
-	height: 12px;
-	margin-right: 16px;
-	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUuNiA2LjRMMS42IDQgMCA1LjYgNS42IDEyIDE2IDEuNiAxNC40IDB6IiBmaWxsPSIjMDJDQkIxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);
-	background-repeat: no-repeat;
+
+.demo-slide video {
+	width: 100%;
+	max-height: 435px;
 }
-.demo-table-cta {
-	align-self: flex-end;
+
+.demo-description {
+	margin-top: 15px;
+	font-size: 1.5rem;
+	color: #fff;
+	text-align: center;
 }
+
+.slider-button {
+	position: absolute;
+	top: 45%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+.left-button {
+	left: 10px;
+}
+
+.right-button {
+	right: 10px;
+}
+
+.glow {
+	-webkit-box-shadow: 0px 0px 105px 45px rgba(45, 146, 255, 0.9);
+	-moz-box-shadow: 0px 0px 105px 45px rgba(45, 146, 255, 0.9);
+	box-shadow: 0px 0px 105px 45px rgba(45, 146, 255, 0.9);
+}
+
 @media (min-width: 641px) {
 	.demo .section-paragraph {
 		padding-left: 90px;
