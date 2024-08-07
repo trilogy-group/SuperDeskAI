@@ -1363,12 +1363,23 @@ label {
 	background: linear-gradient(0deg, #1a1e25 0%, #2c3139 50%, #1d2026 100%);
 }
 
+.features-carousel-wrapper {
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}
+
 .features-carousel {
 	position: relative;
 	overflow: hidden;
 	height: 500px;
 	border-radius: 20px;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+	transition: box-shadow 0.3s ease;
+}
+
+.features-carousel:hover {
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.3),
+		0 0 50px rgba(19, 141, 255, 0.3);
 }
 
 .feature-slide {
