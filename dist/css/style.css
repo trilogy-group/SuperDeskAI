@@ -1455,58 +1455,32 @@ label {
 	}
 }
 
-.demo-header {
-	margin-bottom: 48px;
+.demo.section {
+	background: linear-gradient(135deg, #1a1e25 0%, #2c3139 100%);
+	padding: 80px 0;
 }
-.demo-tables-wrap {
+
+.demo-header {
+	margin-bottom: 60px; /* Increased margin to create more space */
+}
+
+.demo-content {
+	position: relative;
 	display: flex;
-	flex-wrap: wrap;
+	align-items: center;
 	justify-content: center;
-	margin-right: -12px;
-	margin-left: -12px;
+	margin-top: 40px;
 }
 
-.demo-table {
-	position: relative;
-	padding: 12px;
-	width: 368px;
-	flex-grow: 1;
-}
-.demo-table::before {
-	content: "";
-	position: absolute;
-	left: 50%;
-	width: 200%;
-	max-width: 200%;
-	height: 435px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	bottom: 18.8%;
-	transform: translateX(-50%);
-	background-image: url("../images/pricing-illustration.svg");
-}
-.demo-table-inner {
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	background: #2c3039;
-	padding: 24px;
-	height: 100%;
-}
-.demo-table-inner > * {
-	position: relative;
-	width: 100%;
-}
-
-.demo-header {
-	margin-bottom: 48px;
-}
-.demo-slider-wrap {
-	position: relative;
-	width: 100%;
+.demo-slider-container {
+	width: 80%;
 	overflow: hidden;
-	margin: 0 auto;
+	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+	/* Add the glow effect */
+	-webkit-box-shadow: 0px 0px 190px 54px rgba(19, 141, 255, 0.81);
+	-moz-box-shadow: 0px 0px 190px 54px rgba(19, 141, 255, 0.81);
+	box-shadow: 0px 0px 190px 54px rgba(19, 141, 255, 0.81);
 }
 
 .demo-slider {
@@ -1516,60 +1490,92 @@ label {
 
 .demo-slide {
 	min-width: 100%;
-	box-sizing: border-box;
-	padding: 12px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.demo-slide video {
+.demo-video-container {
 	width: 100%;
-	max-height: 435px;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.demo-video-container video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .demo-description {
-	margin-top: 15px;
-	font-size: 1.5rem;
-	color: #fff;
+	font-family: "Poppins", sans-serif;
 	text-align: center;
+	padding: 20px;
+	color: #ffffff;
 }
 
-.slider-button {
-	position: absolute;
-	top: 45%;
-	transform: translateY(-50%);
-	background-color: rgba(0, 0, 0, 0.5);
-	color: white;
+.demo-description h3 {
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.demo-description p {
+	font-size: 1rem;
+	line-height: 1.6;
+	color: #b0b6c2;
+}
+
+.demo-nav-button {
+	background: rgba(255, 255, 255, 0.1);
 	border: none;
-	padding: 10px;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	cursor: pointer;
-	z-index: 1000;
+	transition: background 0.3s ease, transform 0.3s ease;
+	z-index: 10; /* Ensure buttons are above the glow effect */
 }
 
-.left-button {
-	left: 10px;
+.demo-nav-button:hover {
+	background: rgba(255, 255, 255, 0.2);
+	transform: scale(1.1);
 }
 
-.right-button {
-	right: 10px;
+.demo-nav-button svg {
+	width: 24px;
+	height: 24px;
+	color: #ffffff;
 }
 
-.glow {
-	-webkit-box-shadow: 0px 0px 105px 45px rgba(45, 146, 255, 0.9);
-	-moz-box-shadow: 0px 0px 105px 45px rgba(45, 146, 255, 0.9);
-	box-shadow: 0px 0px 105px 45px rgba(45, 146, 255, 0.9);
+.demo-prev {
+	margin-right: 20px;
 }
 
-@media (min-width: 641px) {
-	.demo .section-paragraph {
-		padding-left: 90px;
-		padding-right: 90px;
+.demo-next {
+	margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+	.demo-slider-container {
+		width: 90%;
 	}
-	.demo-header {
-		margin-bottom: 52px;
+
+	.demo-nav-button {
+		width: 40px;
+		height: 40px;
+	}
+
+	.demo-nav-button svg {
+		width: 20px;
+		height: 20px;
 	}
 }
+
 .cta {
 	text-align: center;
 }

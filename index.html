@@ -169,65 +169,59 @@
 						</div>
 					  </div>
 					</div>
-				  </section>
+				</section>
 
 				<section class="demo section">
-					<div class="container-sm">
-						<div class="demo-inner section-inner">
-							<div class="demo-header text-center">
-								<h2 class="section-title mt-0">
-									Browse through tons of use cases.
-								</h2>
-								<p class="section-paragraph mb-0">
-									See what other users have built with our
-									APIs.
-								</p>
-							</div>
-							<div class="demo-slider-wrap">
-								<div class="demo-slider">
-									<div class="demo-slide">
-										<video
-											src="dist/videos/demo.mp4"
-											controls
-											autoplay
-										></video>
-										<p
-											class="demo-description section-paragraph"
-										>
-											Description for Demo Video 1
-										</p>
-									</div>
-									<div class="demo-slide">
-										<video
-											src="dist/videos/demo.mp4"
-											controls
-										></video>
-										<p
-											class="demo-description section-paragraph"
-										>
-											Description for Demo Video 2
-										</p>
-									</div>
-									<div class="demo-slide">
-										<video
-											src="dist/videos/demo.mp4"
-											controls
-										></video>
-										<p
-											class="demo-description section-paragraph"
-										>
-											Description for Demo Video 3
-										</p>
-									</div>
-								</div>
-								<button class="slider-button left-button">
-									&#10094;
-								</button>
-								<button class="slider-button right-button">
-									&#10095;
-								</button>
-							</div>
+					<div class="container">
+					  <div class="demo-inner section-inner">
+						<div class="demo-header text-center">
+						  <h2 class="section-title mt-0">Browse through tons of use cases</h2>
+						  <p class="section-paragraph">See what other users have built with our APIs.</p>
 						</div>
+						<div class="demo-content">
+						  <button class="demo-nav-button demo-prev" aria-label="Previous demo">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							  <polyline points="15 18 9 12 15 6"></polyline>
+							</svg>
+						  </button>
+						  <div class="demo-slider-container">
+							<div class="demo-slider">
+							  <div class="demo-slide">
+								<div class="demo-video-container">
+								  <video src="dist/videos/demo.mp4" loop muted></video>
+								</div>
+								<div class="demo-description">
+								  <h3>Amazing Feature One</h3>
+								  <p>Description for Demo Video 1. Showcase the power of our API.</p>
+								</div>
+							  </div>
+							  <div class="demo-slide">
+								<div class="demo-video-container">
+								  <video src="dist/videos/demo.mp4" loop muted></video>
+								</div>
+								<div class="demo-description">
+								  <h3>Incredible Feature Two</h3>
+								  <p>Description for Demo Video 2. Demonstrate the ease of integration.</p>
+								</div>
+							  </div>
+							  <div class="demo-slide">
+								<div class="demo-video-container">
+								  <video src="dist/videos/demo.mp4" loop muted></video>
+								</div>
+								<div class="demo-description">
+								  <h3>Revolutionary Feature Three</h3>
+								  <p>Description for Demo Video 3. Highlight the scalability of our solution.</p>
+								</div>
+							  </div>
+							</div>
+						  </div>
+						  <button class="demo-nav-button demo-next" aria-label="Next demo">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							  <polyline points="9 18 15 12 9 6"></polyline>
+							</svg>
+						  </button>
+						</div>
+					  </div>
 					</div>
 				</section>
 
@@ -339,6 +333,7 @@
 
 		<script src="dist/js/main.min.js"></script>
 		<script src="dist/js/features-carousel.js"></script>
+		<script src="dist/js/video-carousel.js"></script>
 </body>
 	</body>
 </html>
