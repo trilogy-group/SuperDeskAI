@@ -1359,9 +1359,8 @@ label {
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-features.section {
+.features.section {
 	background: linear-gradient(0deg, #1a1e25 0%, #2c3139 50%, #1d2026 100%);
-	padding: 80px 0;
 }
 
 .features-carousel {
@@ -1379,7 +1378,7 @@ features.section {
 	width: 100%;
 	height: 100%;
 	display: flex;
-	align-items: stretch; /* Changed from center to stretch */
+	align-items: stretch;
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 	background: linear-gradient(
@@ -1399,20 +1398,15 @@ features.section {
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
-	overflow: hidden; /* Added to ensure image doesn't overflow */
+	overflow: hidden;
 }
 
 .feature-image img {
 	width: 100%;
-	height: 100%; /* Changed from auto to 100% */
-	object-fit: cover; /* This ensures the image covers the area without distortion */
+	height: 100%;
+	object-fit: cover;
 	border-radius: 15px;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-	transition: transform 0.3s ease-in-out;
-}
-
-.feature-slide:hover .feature-image img {
-	transform: scale(1.05);
 }
 
 .feature-content {
@@ -1420,7 +1414,7 @@ features.section {
 	padding: 40px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center; /* Centers content vertically */
+	justify-content: center;
 }
 
 .feature-title {
@@ -1451,7 +1445,7 @@ features.section {
 	}
 
 	.feature-image {
-		height: 200px; /* Set a fixed height for mobile */
+		height: 200px;
 	}
 
 	.feature-title {
