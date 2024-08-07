@@ -1361,13 +1361,13 @@ label {
 
 .features.section {
 	background: linear-gradient(0deg, #1a1e25 0%, #2c3139 50%, #1d2026 100%);
-	padding: 80px 0;
+	padding: 40px 0 0;
 }
 
 .features-carousel {
 	position: relative;
 	overflow: hidden;
-	height: 500px;
+	min-height: 500px;
 	border-radius: 20px;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
@@ -1444,24 +1444,42 @@ label {
 	.feature-content {
 		width: 100%;
 		padding: 20px;
+		text-align: center;
 	}
 
 	.feature-title {
-		font-size: 2rem;
+		font-size: 1.2rem;
 	}
 
 	.feature-description {
-		font-size: 1rem;
+		font-size: 0.8rem;
 	}
 }
 
 .demo.section {
 	background: #1a1e25;
-	padding: 80px 0;
+	padding: 0 0 40px;
 }
 
 .demo-header {
-	margin-bottom: 60px; /* Increased margin to create more space */
+	margin-bottom: 40px;
+}
+
+.demo-title {
+	font-size: 3rem; /* Increased font size */
+	line-height: 1.2;
+	margin-bottom: 20px;
+	color: #fff;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.demo-subtitle {
+	font-size: 1.5rem; /* Increased font size */
+	line-height: 1.5;
+	color: #b0b6c2;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .demo-content {
@@ -1561,6 +1579,21 @@ label {
 }
 
 @media (max-width: 768px) {
+	.demo-title {
+		font-size: 1.5rem;
+	}
+
+	.demo-subtitle {
+		font-size: 0.8rem;
+	}
+
+	.demo-description h3 {
+		font-size: 1rem;
+	}
+	.demo-description p {
+		font-size: 0.8rem;
+	}
+
 	.demo-slider-container {
 		width: 90%;
 	}
