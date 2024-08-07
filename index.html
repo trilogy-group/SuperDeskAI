@@ -14,6 +14,7 @@
 			href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600"
 			rel="stylesheet"
 		/>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="dist/css/style.css" />
 		<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
 		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -134,68 +135,41 @@
 
 				<section class="features section">
 					<div class="container">
-						<div
-							class="features-inner section-inner has-bottom-divider"
-						>
-							<div class="features-wrap">
-								<div class="feature text-center is-revealing">
-									<div class="feature-inner">
-										<div class="feature-icon">
-											<img
-												src="dist/images/feature-icon-01.svg"
-												alt="Feature 01"
-											/>
-										</div>
-										<h4 class="feature-title mt-24">
-											AI First Support
-										</h4>
-										<p class="text-sm mb-0">
-											Drastically reduce manual effort
-											with AI-driven automation at the
-											core.
-										</p>
-									</div>
-								</div>
-								<div class="feature text-center is-revealing">
-									<div class="feature-inner">
-										<div class="feature-icon">
-											<img
-												src="dist/images/feature-icon-02.svg"
-												alt="Feature 02"
-											/>
-										</div>
-										<h4 class="feature-title mt-24">
-											Seamlessly Scalable with
-											Cloud-Native Solution
-										</h4>
-										<p class="text-sm mb-0">
-											Built for the cloud, our tool offers
-											unparalleled scalability and
-											flexibility
-										</p>
-									</div>
-								</div>
-								<div class="feature text-center is-revealing">
-									<div class="feature-inner">
-										<div class="feature-icon">
-											<img
-												src="dist/images/feature-icon-03.svg"
-												alt="Feature 03"
-											/>
-										</div>
-										<h4 class="feature-title mt-24">
-											Supercharge Your Integration
-										</h4>
-										<p class="text-sm mb-0">
-											Bulid APIs that deliver
-											Lightning-Fast Responses
-										</p>
-									</div>
-								</div>
+					  <div class="features-inner section-inner">
+						<div class="features-wrap">
+						  <div class="features-carousel">
+							<div class="feature-slide">
+							  <div class="feature-image">
+								<img src="dist/images/features/ai-first.jpeg" alt="AI First Support" />
+							  </div>
+							  <div class="feature-content">
+								<h3 class="feature-title">AI First Support</h3>
+								<p class="feature-description">Drastically reduce manual effort with AI-driven automation at the core.</p>
+							  </div>
 							</div>
+							<div class="feature-slide">
+							  <div class="feature-image">
+								<img src="dist/images/features/cloud-native.webp" alt="Cloud-Native Solution" />
+							  </div>
+							  <div class="feature-content">
+								<h3 class="feature-title">Cloud-Native Scalability</h3>
+								<p class="feature-description">Built for the cloud, our tool offers unparalleled scalability and flexibility.</p>
+							  </div>
+							</div>
+							<div class="feature-slide">
+							  <div class="feature-image">
+								<img src="dist/images/features/supercharge.jpeg" alt="Supercharge Integration" />
+							  </div>
+							  <div class="feature-content">
+								<h3 class="feature-title">Supercharged Integration</h3>
+								<p class="feature-description">Build APIs that deliver lightning-fast responses and seamless connectivity.</p>
+							  </div>
+							</div>
+						  </div>
 						</div>
+					  </div>
 					</div>
-				</section>
+				  </section>
 
 				<section class="demo section">
 					<div class="container-sm">
@@ -364,5 +338,7 @@
 		</div>
 
 		<script src="dist/js/main.min.js"></script>
+		<script src="dist/js/features-carousel.js"></script>
+</body>
 	</body>
 </html>
