@@ -1067,6 +1067,8 @@ label {
 		max-width: 280px;
 	}
 }
+
+/*=====================================SITE HEADER STYLES========================================*/
 .site-header {
 	padding: 24px 0;
 }
@@ -1114,6 +1116,8 @@ label {
 		transform: skewY(-12deg);
 	}
 }
+
+/*=====================================HERO SECTION STYLES========================================*/
 
 .hero-copy {
 	position: relative;
@@ -1460,6 +1464,8 @@ label {
 	}
 }
 
+/*=====================================FEATURES SECTION STYLES========================================*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 .features.section {
@@ -1570,6 +1576,8 @@ label {
 		font-size: 1rem;
 	}
 }
+
+/*=====================================DEMO SECTION STYLES========================================*/
 
 .demo.section {
 	background: #1a1e25;
@@ -1732,6 +1740,8 @@ label {
 	}
 }
 
+/*=====================================CTA SECTION STYLES========================================*/
+
 .cta {
 	text-align: center;
 }
@@ -1803,6 +1813,8 @@ label {
 		margin-right: 40px;
 	}
 }
+
+/*=====================================SOME GENERAL STYLES========================================*/
 .is-boxed {
 	background: #242830;
 }
@@ -1834,6 +1846,8 @@ main {
 		padding-bottom: 88px;
 	}
 }
+
+/*=====================================SITE FOOTER STYLES========================================*/
 .site-footer {
 	font-size: 14px;
 	line-height: 22px;
@@ -1910,8 +1924,7 @@ main {
 	}
 }
 
-/*----------------------------------------------------------------------------------------*/
-/* All Demos Page Styles */
+/*=====================================DEMO PAGE STYLES========================================*/
 .all-demos.section {
 	background: linear-gradient(0deg, #1d2026 0%, #2c3139 50%, #1d2026 100%);
 	padding: 20px 0;
