@@ -1470,50 +1470,39 @@ label {
 
 .features.section {
 	background: linear-gradient(0deg, #1a1e25 0%, #2c3139 50%, #1d2026 100%);
+	padding: 20px 0;
 }
 
-.features-carousel-wrapper {
-	perspective: 1000px;
-	transform-style: preserve-3d;
+.features-cards {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
 }
 
-.features-carousel {
-	position: relative;
-	overflow: hidden;
-	height: 500px;
+.feature-card {
+	background: rgba(255, 255, 255, 0.05);
 	border-radius: 20px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-	transition: box-shadow 0.3s ease;
+	transition: all 0.3s ease;
+	height: 300px; /* Set a fixed height for all cards */
 }
 
-.features-carousel:hover {
+.feature-card:hover {
+	transform: translateY(-5px);
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.3),
 		0 0 50px rgba(19, 141, 255, 0.3);
 }
 
-.feature-slide {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: stretch;
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
-	background: linear-gradient(
-		90deg,
-		rgba(26, 30, 37, 0.8) 0%,
-		rgba(44, 49, 57, 0.8) 100%
-	);
-}
-
-.feature-slide.active {
-	opacity: 1;
+.feature-card.reverse {
+	flex-direction: row-reverse;
 }
 
 .feature-image {
-	flex: 1;
+	flex: 0 0 40%; /* Set to 40% of the card width */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1531,49 +1520,58 @@ label {
 
 .feature-content {
 	flex: 1;
-	padding: 40px;
+	padding: 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
+.feature-content.text-right {
+	text-align: right;
+}
+
 .feature-title {
 	font-family: "Poppins", sans-serif;
-	font-size: 2.5rem;
+	font-size: 2rem; /* Reduced from 2.5rem */
 	font-weight: 700;
 	color: #ffffff;
-	margin-bottom: 20px;
+	margin-bottom: 15px; /* Reduced from 20px */
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .feature-description {
 	font-family: "Poppins", sans-serif;
-	font-size: 1.2rem;
-	line-height: 1.6;
+	font-size: 1rem; /* Reduced from 1.2rem */
+	line-height: 1.5;
 	color: #b0b6c2;
 }
 
 @media (max-width: 768px) {
-	.feature-slide {
+	.feature-card,
+	.feature-card.reverse {
 		flex-direction: column;
+		height: auto; /* Allow height to adjust on mobile */
 	}
 
-	.feature-image,
-	.feature-content {
+	.feature-image {
 		width: 100%;
 		padding: 20px;
 	}
 
-	.feature-image {
-		height: 200px;
+	.feature-content,
+	.feature-content.text-right {
+		width: 100%;
+		padding: 20px;
+		text-align: center;
 	}
 
 	.feature-title {
-		font-size: 2rem;
+		font-size: 1.75rem; /* Further reduced for mobile */
+		margin-top: 0;
 	}
 
 	.feature-description {
-		font-size: 1rem;
+		font-size: 0.9rem; /* Further reduced for mobile */
 	}
 }
 
