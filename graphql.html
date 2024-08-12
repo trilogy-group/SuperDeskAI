@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>GraphQL Reference</title>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="dist\images\TI_logo_blue-cropped.svg"
+		/>
+		<style>
+			body,
+			html {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				width: 100%;
+				overflow: hidden;
+			}
+			#embedded-explorer {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="width: 100%; height: 100%" id="embedded-explorer"></div>
+		<script src="https://embeddable-explorer.cdn.apollographql.com/_latest/embeddable-explorer.umd.production.min.js"></script>
+		<script>
+			new window.EmbeddedExplorer({
+				target: "#embedded-explorer",
+				graphRef: "super-desk-ai@current",
+				persistExplorerState: false,
+				initialState: {
+					document: ``,
+					variables: {},
+					headers: {},
+					displayOptions: {
+						showHeadersAndEnvVars: true,
+						docsPanelState: "open",
+						theme: "dark",
+					},
+				},
+			});
+		</script>
+	</body>
+</html>
