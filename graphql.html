@@ -18,17 +18,18 @@
 				width: 100%;
 				overflow: hidden;
 			}
-			#embedded-explorer {
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-			}
 		</style>
 	</head>
 	<body>
-		<div style="width: 100%; height: 100%" id="embedded-explorer"></div>
+		<div
+			style="
+				width: 100%;
+				height: calc(100vh + 48px);
+				top: -48px;
+				position: relative;
+			"
+			id="embedded-explorer"
+		></div>
 		<script src="https://embeddable-explorer.cdn.apollographql.com/_latest/embeddable-explorer.umd.production.min.js"></script>
 		<script>
 			new window.EmbeddedExplorer({
